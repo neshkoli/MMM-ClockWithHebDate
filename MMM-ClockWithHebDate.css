@@ -1,0 +1,179 @@
+.MMM-ClockWithHebDate .clock-hour-digital {
+  color: var(--color-text-bright);
+}
+
+.MMM-ClockWithHebDate .clock-minute-digital {
+  color: var(--color-text-bright);
+}
+
+.MMM-ClockWithHebDate .clock-second-digital {
+  color: var(--color-text-dimmed);
+}
+
+/* Horizontal layout for date and time */
+.MMM-ClockWithHebDate .date-time-container {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+/* Alignment based on module position */
+.region.top.right .MMM-ClockWithHebDate .date-time-container,
+.region.middle.right .MMM-ClockWithHebDate .date-time-container,
+.region.bottom.right .MMM-ClockWithHebDate .date-time-container,
+.region.top.right .MMM-ClockWithHebDate .date-container,
+.region.middle.right .MMM-ClockWithHebDate .date-container,
+.region.bottom.right .MMM-ClockWithHebDate .date-container {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.region.top.left .MMM-ClockWithHebDate .date-time-container,
+.region.middle.left .MMM-ClockWithHebDate .date-time-container,
+.region.bottom.left .MMM-ClockWithHebDate .date-time-container,
+.region.top.left .MMM-ClockWithHebDate .date-container,
+.region.middle.left .MMM-ClockWithHebDate .date-container,
+.region.bottom.left .MMM-ClockWithHebDate .date-container {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.region.top.center .MMM-ClockWithHebDate .date-time-container,
+.region.upper.third .MMM-ClockWithHebDate .date-time-container,
+.region.middle.center .MMM-ClockWithHebDate .date-time-container,
+.region.lower.third .MMM-ClockWithHebDate .date-time-container,
+.region.bottom.center .MMM-ClockWithHebDate .date-time-container,
+.region.top.center .MMM-ClockWithHebDate .date-container,
+.region.upper.third .MMM-ClockWithHebDate .date-container,
+.region.middle.center .MMM-ClockWithHebDate .date-container,
+.region.lower.third .MMM-ClockWithHebDate .date-container,
+.region.bottom.center .MMM-ClockWithHebDate .date-container {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Fallback for any other positions */
+.MMM-ClockWithHebDate .date-time-container,
+.MMM-ClockWithHebDate .date-container {
+  justify-content: center;
+}
+
+.MMM-ClockWithHebDate .date-time-container .date {
+  order: 1;
+  flex-shrink: 0;
+}
+
+.MMM-ClockWithHebDate .date-time-container .time {
+  order: 2;
+  flex-shrink: 0;
+}
+
+/* Alignment for individual date and time elements when not in container */
+.region.top.right .MMM-ClockWithHebDate .date,
+.region.middle.right .MMM-ClockWithHebDate .date,
+.region.bottom.right .MMM-ClockWithHebDate .date,
+.region.top.right .MMM-ClockWithHebDate .time,
+.region.middle.right .MMM-ClockWithHebDate .time,
+.region.bottom.right .MMM-ClockWithHebDate .time,
+.region.top.right .MMM-ClockWithHebDate .date-container,
+.region.middle.right .MMM-ClockWithHebDate .date-container,
+.region.bottom.right .MMM-ClockWithHebDate .date-container {
+  text-align: right;
+}
+
+.region.top.left .MMM-ClockWithHebDate .date,
+.region.middle.left .MMM-ClockWithHebDate .date,
+.region.bottom.left .MMM-ClockWithHebDate .date,
+.region.top.left .MMM-ClockWithHebDate .time,
+.region.middle.left .MMM-ClockWithHebDate .time,
+.region.bottom.left .MMM-ClockWithHebDate .time,
+.region.top.left .MMM-ClockWithHebDate .date-container,
+.region.middle.left .MMM-ClockWithHebDate .date-container,
+.region.bottom.left .MMM-ClockWithHebDate .date-container {
+  text-align: left;
+}
+
+.region.top.center .MMM-ClockWithHebDate .date,
+.region.upper.third .MMM-ClockWithHebDate .date,
+.region.middle.center .MMM-ClockWithHebDate .date,
+.region.lower.third .MMM-ClockWithHebDate .date,
+.region.bottom.center .MMM-ClockWithHebDate .date,
+.region.top.center .MMM-ClockWithHebDate .time,
+.region.upper.third .MMM-ClockWithHebDate .time,
+.region.middle.center .MMM-ClockWithHebDate .time,
+.region.lower.third .MMM-ClockWithHebDate .time,
+.region.bottom.center .MMM-ClockWithHebDate .time,
+.region.top.center .MMM-ClockWithHebDate .date-container,
+.region.upper.third .MMM-ClockWithHebDate .date-container,
+.region.middle.center .MMM-ClockWithHebDate .date-container,
+.region.lower.third .MMM-ClockWithHebDate .date-container,
+.region.bottom.center .MMM-ClockWithHebDate .date-container {
+  text-align: center;
+}
+
+/* Module-level alignment */
+.region.top.right .MMM-ClockWithHebDate,
+.region.middle.right .MMM-ClockWithHebDate,
+.region.bottom.right .MMM-ClockWithHebDate {
+  text-align: right;
+  width: 100%;
+}
+
+.region.top.left .MMM-ClockWithHebDate,
+.region.middle.left .MMM-ClockWithHebDate,
+.region.bottom.left .MMM-ClockWithHebDate {
+  text-align: left;
+  width: 100%;
+}
+
+.region.top.center .MMM-ClockWithHebDate,
+.region.upper.third .MMM-ClockWithHebDate,
+.region.middle.center .MMM-ClockWithHebDate,
+.region.lower.third .MMM-ClockWithHebDate,
+.region.bottom.center .MMM-ClockWithHebDate {
+  text-align: center;
+  width: 100%;
+}
+
+.MMM-ClockWithHebDate .date-time-container .date {
+  order: 1;
+  flex-shrink: 0;
+}
+
+.MMM-ClockWithHebDate .date-time-container .time {
+  order: 2;
+  flex-shrink: 0;
+}
+
+/* Hebrew date styling */
+.MMM-ClockWithHebDate .hebrew-date {
+  line-height: 1.2;
+  direction: rtl;
+  text-align: right;
+}
+
+/* Date container for horizontal Hebrew + regular date layout */
+.MMM-ClockWithHebDate .date-container {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+  flex-wrap: nowrap;
+}
+
+.MMM-ClockWithHebDate .date-container .hebrew-date {
+  order: 1;
+  flex-shrink: 0;
+}
+
+.MMM-ClockWithHebDate .date-container .date {
+  order: 2;
+  flex-shrink: 0;
+}
+
+/* Override text alignment for Hebrew date in different positions */
+.region.top.left .MMM-ClockWithHebDate .hebrew-date,
+.region.middle.left .MMM-ClockWithHebDate .hebrew-date,
+.region.bottom.left .MMM-ClockWithHebDate .hebrew-date {
+  text-align: right; /* Hebrew should always be RTL */
+}

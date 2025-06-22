@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "node",
+      "args": ["mcp-github-server.js"],
+      "cwd": "/Users/noame/dev/MagicMirror/modules/MMM-ClockWithHebDate",
+      "env": {
+        "GITHUB_TOKEN": "${GITHUB_TOKEN}"
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "mmm-clockwithhebdate",
+  "version": "1.0.0",
+  "description": "MagicMirror module to display current time, date, and Hebrew date",
+  "main": "MMM-ClockWithHebDate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mcp": "node mcp-github-server.js",
+    "setup-github": "node setup-github-repo.js",
+    "init": "node init-github.js"
+  },
+  "keywords": [
+    "magicmirror",
+    "module",
+    "clock",
+    "hebrew",
+    "date"
+  ],
+  "author": "Noam Eshkoli",
+  "license": "MIT",
+  "dependencies": {
+    "@hebcal/core": "^5.9.8"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@octokit/rest": "^20.1.1",
+    "dotenv": "^16.4.5"
+  }
+}
