@@ -5,7 +5,7 @@
   "main": "MMM-ClockWithHebDate.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mcp": "node mcp-github-server.js",
+    "mcp": "cd ~/.mcp && node mcp-launcher.js github",
     "setup-github": "node setup-github-repo.js",
     "init": "node init-github.js"
   },
@@ -20,10 +20,5 @@
   "license": "MIT",
   "dependencies": {
     "@hebcal/core": "^5.9.8"
-  },
-  "devDependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "@octokit/rest": "^20.1.1",
-    "dotenv": "^16.4.5"
   }
 }

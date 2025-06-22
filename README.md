@@ -81,30 +81,42 @@ To use the MMM-ClockWithHebDate module, add the following configuration to your 
 
 ## GitHub Integration (MCP Service)
 
-This project includes a Model Context Protocol (MCP) service for GitHub integration, making it easy to manage your repository programmatically.
+This project integrates with a global Model Context Protocol (MCP) service for GitHub, making it easy to manage repositories programmatically across all your projects.
 
 ### Quick Setup
 
-1. **Install dependencies:**
+1. **The MCP GitHub server is installed globally** at `~/.mcp/servers/github/`
+
+2. **Configure your GitHub token globally:**
 
    ```bash
-   npm install
+   # Edit the global MCP environment file
+   nano ~/.mcp/.env
+   
+   # Add your GitHub token:
+   GITHUB_TOKEN=your_github_token_here
    ```
 
-2. **Run the interactive setup:**
+3. **Run the setup for this project:**
 
    ```bash
    npm run init
    ```
 
-   This will guide you through:
-   - Setting up your GitHub token
-   - Creating a new repository
-   - Uploading all project files
+### Global MCP Usage
 
-### Manual Setup
+The GitHub MCP server is now available globally and can be used by any project:
 
-If you prefer manual setup:
+```bash
+# List available MCP servers
+cd ~/.mcp && node mcp-launcher.js
+
+# Start the GitHub MCP server
+cd ~/.mcp && npm run github
+
+# Or from this project
+npm run mcp
+```
 
 1. **Install dependencies:**
 
