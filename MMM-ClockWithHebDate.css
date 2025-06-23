@@ -1,3 +1,7 @@
+.MMM-ClockWithHebDate {
+  padding-right: 30px;
+}
+
 .MMM-ClockWithHebDate .clock-hour-digital {
   color: var(--color-text-bright);
 }
