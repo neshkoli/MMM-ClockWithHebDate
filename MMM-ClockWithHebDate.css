@@ -1,5 +1,6 @@
 .MMM-ClockWithHebDate {
-  padding-right: 30px;
+  margin-left: -50px;
+  width: 70%;
 }
 
 .MMM-ClockWithHebDate .clock-hour-digital {
